@@ -5,7 +5,6 @@ const enterNumber = document.querySelector('.js-enter-number');
 const tryButton = document.querySelector('.js-try-button');
 const hint = document.querySelector('.js-hint');
 const attempsBox = document.querySelector('.js-attemps');
-//const dataNumber = {};
 let attemps = 0;
 
 function getRandomNumber(max) {
@@ -13,7 +12,6 @@ function getRandomNumber(max) {
 }
 
 const randomNumber = getRandomNumber(100);
-
 console.log(randomNumber);
 
 /*function getEnterNumber() {
@@ -27,22 +25,22 @@ function handlerCalculation() {
 
   if (inputValue > randomNumber) {
     hint.innerHTML = 'Demasiado alto.';
-    let attemps = attemps + 1;
-    attempsBox.innerHTML = `Número de intentos: ${attemps}`;
+    /*let attemps = attemps + 1;
+    attempsBox.innerHTML = `Número de intentos: ${attemps}`;*/
   } else if (inputValue < randomNumber) {
     hint.innerHTML = 'Demasiado bajo';
-    let attemps = attemps + 1;
-    attempsBox.innerHTML = `Número de intentos: ${attemps}`;
-  } else if (inputValue === randomNumber) {
+    /*let attemps = attemps + 1;
+    attempsBox.innerHTML = `Número de intentos: ${attemps}`;*/
+  } else if (inputValue == randomNumber) {
     hint.innerHTML = 'Has ganado campeona!!!';
   } else if (inputValue > 100) {
     ('El número debe estar entre 1 y 100.');
-    let attemps = attemps + 1;
-    attempsBox.innerHTML = `Número de intentos: ${attemps}`;
+    /*/let attemps = attemps + 1;
+    attempsBox.innerHTML = `Número de intentos: ${attemps}`;*/
   } else if (inputValue < 1) {
     ('El número debe estar entre 1 y 100.');
-    let attemps = attemps + 1;
-    attempsBox.innerHTML = `Número de intentos: ${attemps}`;
+    /*let attemps = attemps + 1;
+    attempsBox.innerHTML = `Número de intentos: ${attemps}`;*/
   }
 }
 
