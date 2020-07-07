@@ -1,18 +1,60 @@
-h1 {
+.container {
+  width: 450px;
+  height: 600px;
+  background-color: #bdfaf4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #2483bd;
 }
-
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.game-title {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #2483bd;
+  border-radius: 5px;
+  margin-bottom: 60px;
+}
+.number {
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.number-imput {
+  height: 30px;
+}
 .try-button {
   background: #2c97e2;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
   border: none;
+  border-radius: 12px;
   padding: 10px;
   color: white;
   width: 100px;
   display: block;
-  margin-top: 15px;
+  margin: 15px 0;
+  border: 2px solid white;
+  outline: none;
 }
-label,
-p {
+
+.hint,
+.attemps {
   display: block;
+  background-color: white;
+  height: 30px;
+  width: 325px;
+  text-align: center;
+  font-family: bold;
+  border: 2px solid #2483bd;
+  border-radius: 10px;
   margin-top: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
